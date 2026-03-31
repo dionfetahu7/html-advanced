@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lesson 5</title>
+
+	<style>
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	
+	<h1>HTML Tables, Lists</h1>
+
+
+	<h2>Tabelat</h2>
+
+	<table>
+		<thead>
+			<tr> <!-- tr = table row -->
+				<th>#</th> <!-- th = table headings -->
+				<th>Emri</th>
+				<th>Mbiemri</th>
+				<th>Tel</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>  <!-- table data -->
+				<td>Lirak</td>
+				<td>Hamiti</td>
+				<td>044-456-789</td>
+			</tr>
+			<tr>
+				<td>2</td>  <!-- table data -->
+				<td>Filan</td>
+				<td>Fisteku</td>
+				<td>044-123-789</td>
+			</tr>
+			<tr>
+				<td>3</td>  <!-- table data -->
+				<td>John</td>
+				<td rowspan="2">Doe</td>
+				<td>044-123-123</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Jane</td>
+				<td>048-123-123</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">Tabela e te dhenave te perdoruesve</td>
+			</tr>
+		</tfoot>
+	</table>
+
+
+	<h2>Listat</h2>
+
+	<p>Ka 3 lloje te listave. Ato jan listat e pa numruara (unordered), listat e numruara (ordered), edhe listat pershkruese (description).
+
+	<ul type="square"> <!-- ul = unordered list -->
+		<li>HTML</li> <!-- li = list item -->
+		<li>CSS</li>
+		<li>JavaScript</li>
+		<li>PhP</li>
+	</ul>
+
+	<ol type="I" start="8">
+		<li>Almira Halili</li>
+		<li>Anise Sherifi</li>
+		<li>Blin Xhemajli</li>
+		<li>Dion Fetahu</li>
+		<li>Elson Krasniqi</li>
+		<li>Erdi Zejnullahu</li>
+		<li>Flodian Sejdiu</li>
+		<li>Ideal Ahmeti</li>
+		<li>Planet Asllani</li>
+	</ol>
+
+
+	<dl>
+		<dt>Coffe</dt> <!-- dt = description term -->
+		<dd>Sugar</dd> <!-- dd = description data -->
+		<dd>Milk</dd>
+		<dd>Grounded beans</dd>
+	</dl>
+
+
+
+
+</body>
+</html>
