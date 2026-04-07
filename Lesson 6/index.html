@@ -1,67 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lesson 6</title>
+	<title>forms</title>
 </head>
 <body>
+<form>
+<fieldset>
+	<label for= "first name">First Name</label><br />
+	<input type= "text" name= "firstName" id="firstName" value="John" readonly></br>
 
-	<h1>HTML Blocks, Audio, Video, Youtube</h1>
+	<label for= "lastName">Last Name</label><br />
+	<input type= "text" name= "lastName" id="lastName" disabled /><br />
 
-	<ul>
-		<li>Block elements and inline elements</li>
-		<li>Audio</li>
-		<li>Video</li>
-		<li>Iframes</li>
-		<li>Youtube, Google map iframe</li>
-		<li>Favicom</li>
-	</ul>
-
-	<h2>Block Elementet</h2>
-
-	<p>https://learn.digitalschool.tech/course/view.php?id=13093</p>
-
-	<a href="">https://learn.digitalschool.tech/course/view.php?id=13093</a>
-
-	<img src="https://learn.digitalschool.tech/course/view.php?id=13093" width="200px">
-
-	<h2>Audio dhe Video</h2>
-
-	<audio controls>
-		<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-
-		<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-
-		Your browser does not support the audio element.
-
-	</audio>
-
-
-	<video controls width="400px" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s">
-		<source src="https://contentful-videos.code.org/90t6bu6vlf76/1jVlIMJ2yBmzqD1H5hHDNj/9fe6b733248373a6546b44d1bad1baf6/ai-01-intro-to-ai.mp4" type="video/mp4">
-
-        Your browser does not support the video element.
-
-	</video>
-
-
-	<h2>Iframes</h2>
-
-	<iframe src="https://shkolladigjitale.com/" width="90%" height="500px"></iframe>
-
-    <br><hr><br>
-
-	<p><a href="https://www.w3schools.com/html/default.asp" target="">Meso HTML</a></p>
-
-	<p><a href="https://www.w3schools.com/html/default.asp" target="">Storie Suksesi</a></p>
-
-	<iframe name="iframe_ds" title="iframe example" width="400px" height="800px"></iframe>
-
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2114.743551976108!2d21.145157974573245!3d42.37253923431546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13547f474082088d%3A0x386d7b98bdcde3a4!2sShkolla%20Digjitale%20Ferizaj!5e1!3m2!1sen!2s!4v1775124313910!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/VCJFzVtvhBQ?si=CP9DLWbprRykbuZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+	<label for= "email">Email</label><br />
+	<input type= "email" name="email" id="email" required /><br />
 	
+	<label for= "password">Password</label><br />
+	<input type= "password" name="password" id="password" size="40" placeholder="Your Password" /><br />
+	
+	<label>Gender</label><br />
+	<input type="radio" name="female" id="female" value="Female" />
+	<label for="female">Female</label><br />
+	<input type="radio" name="male" id="male" value="Male" />
+	<label for="male">Male</label><br />
 
+	<label>Hobbies</label><br />
+	<input type="checkbox" name="gaming" id="gaming" value="Gaming" />
+	<label for="gaming">Gaming</label><br />
+
+	<input type="checkbox" name="reading" id="reading" value="Reading" />
+	<label for="reading">Reading</label><br />
+
+	<input type="checkbox" name="football" id="football" value="Football" />
+	<label for="football">Football</label><br />
+
+	<label for="pets">Choose a pet</label>
+	<select name="pets" id="pets">
+		<option value="dog">Dog</option>
+		<option value="cat">Cat</option>
+		<option value="hamster">Hamster</option>
+	</select><br>
+	<textarea name="message" id="message" rows="10" cols="20"></textarea><br />
+
+	<input type="submit" value="Submit" />
+</fieldset>
+</form>
 </body>
 </html>
