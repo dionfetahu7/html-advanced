@@ -30,3 +30,78 @@ div.desc{
 	display: inline-block;
 	background-position: -500px -500px;
 }
+
+}
+
+
+/*
+
+-- attribute exists--
+[data-value]{
+	
+}
+
+-- attribute has this exact value --
+[data-value="foo"]{
+	
+}
+
+-- attribute value contains this value somewhere in it --
+[data-value*="foo"]{
+	
+}
+
+-- attribute has this value space-separated list somewhere --
+[data-value~="foo"]{
+	
+}
+
+-- attribute value starts with it --
+[data-value^="foo"]{
+	
+}
+
+-- attribute value starts with this in a dash-separated list --
+[data-value|="foo"]{
+	
+}
+
+-- attribute value ends with this --
+[data-value$="foo"]{
+	
+}
+
+*/
+
+p[class]{
+	color: blue;
+}
+
+p[class="ds"]{
+	color: red;
+}
+
+p[class*="ds"]{
+	color: green;
+}
+
+p[class~="ds"]{
+	color: purple;
+}
+
+p[class^="paragraf"]{
+	color: orange;
+}
+
+p[class|="ds"]{
+	color: hotpink;
+}
+
+p[class="ds"]{
+	color: red;
+}
+
+
+p[class$="ds"]{
+	color: aquamarine;
+}
